@@ -1,0 +1,37 @@
+{
+	"name": "Notification Listener",
+	"id": "uniplugin_notificationlistener",
+	"version": "1.0.0",
+	"description": "Notification Listener",
+	"_dp_type": "nativeplugin",
+	"_dp_nativeplugin": {
+		"android": {
+			"plugins": [{
+				"type": "module",
+				"name": "uniplugin_notificationlistener",
+				"class": "com.xtrape.uniplugin.notificationlistener.NotifyListenerService"
+			}],
+			"integrateType": "aar",
+			"minSdkVersion": "21",
+			"permissions": [
+				"android.permission.BIND_ACCESSIBILITY_SERVICE",
+				"android.permission.DISABLE_KEYGUARD",
+				"android.permission.WAKE_LOCK",
+				"android.permission.RECEIVE_BOOT_COMPLETED"
+			],
+			"dependencies": [
+				"androidx.recyclerview:recyclerview:1.0.0",
+				"androidx.legacy:legacy-support-v4:1.0.0",
+				"androidx.appcompat:appcompat:1.0.0",
+				"com.alibaba:fastjson:1.2.83",
+				"com.facebook.fresco:fresco:1.13.0",
+				"com.google.code.gson:gson:2.10.1",
+				"net.lingala.zip4j:zip4j:2.11.5"
+			],
+			"abis": [
+				"armeabi-v7a",
+				"x86"
+			]
+		}
+	}
+}

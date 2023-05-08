@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_service_description">模拟点击服务</string>
+    <string name="app_name">karma617通知栏监听助手</string>
+    <string name="simulator_help">如果需要自动点击通知栏消息，请打开此开关。</string>
+    <string name="simulator_name">辅助功能</string>
+</resources>

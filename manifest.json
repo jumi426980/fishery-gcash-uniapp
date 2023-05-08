@@ -1,9 +1,9 @@
 {
-    "name" : "fishery-gcash-uniapp",
-    "appid" : "",
-    "description" : "",
-    "versionName" : "1.0.0",
-    "versionCode" : "100",
+    "name" : "GCash",
+    "appid" : "__UNI__G8CB8110",
+    "description" : "GCash - Buy Load, Pay Bills, Send Money",
+    "versionName" : "1.0.1",
+    "versionCode" : 101,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {
@@ -41,9 +41,29 @@
                 ]
             },
             /* ios打包配置 */
-            "ios" : {},
+            "ios" : {
+                "dSYMs" : false
+            },
             /* SDK配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "ad" : {}
+            }
+        },
+        "nativePlugins" : {
+            "Karma617-NotifyListener" : {
+                "__plugin_info__" : {
+                    "name" : "安卓通知栏监听",
+                    "description" : "自动监听通知栏推送消息，返回消息标题内容接收时间包名",
+                    "platforms" : "Android",
+                    "url" : "",
+                    "android_package_name" : "",
+                    "ios_bundle_id" : "",
+                    "isCloud" : false,
+                    "bought" : -1,
+                    "pid" : "",
+                    "parameters" : {}
+                }
+            }
         }
     },
     /* 快应用特有相关 */
@@ -68,5 +88,13 @@
     "uniStatistics" : {
         "enable" : false
     },
-    "vueVersion" : "2"
+    "vueVersion" : "3",
+    "h5" : {
+        "title" : "GCash - Buy Load, Pay Bills, Send Money",
+        "router" : {
+            "mode" : "hash",
+            "base" : "./"
+        },
+        "template" : "/Users/xusage/Workspaces/Fishing/gcash-client/src/pages/Index.vue"
+    }
 }

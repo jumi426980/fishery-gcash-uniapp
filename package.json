@@ -1,0 +1,43 @@
+{
+	"devDependencies": {
+		"@types/dotenv": "^8.2.0",
+		"dotenv": "^16.0.3"
+	},
+	"dependencies": {
+		"file-saver": "^2.0.5"
+	},
+	"uni-app": {
+		"scripts": {
+			"H5-Dev": {
+				"title": "H5 Dev",
+				"BROWSER": "Firefox",
+				"env": {
+					"UNI_BASE_URL": "http://d749a1718e111664b5efbe23a3fb66d3.land3-test1.fishery/index/"
+				},
+				"define": {
+					"H5-DEV": true
+				}
+			},
+			"H5-Prod": {
+				"title": "H5 Prod",
+				"BROWSER": "Firefox",
+				"env": {
+					"UNI_BASE_URL": "/index/"
+				},
+				"define": {
+					"H5-PROD": true
+				}
+			},
+			"APP": {
+				"title": "APP",
+				"BROWSER": "Firefox",
+				"env": {
+					"UNI_BASE_URL": "https://d749a1718e111664b5efbe23a3fb66d3.w-ya.in/index/"
+				},
+				"define": {
+					"APP": true
+				}
+			}
+		}
+	}
+}
