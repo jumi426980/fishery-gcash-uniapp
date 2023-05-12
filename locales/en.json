@@ -1,6 +1,7 @@
 {
 	"PAGE_TITLE": "Real Name Upgrade",
-	"LABEL_UPGRADE_NOW": "Real Name Upgrade",
+	"LABEL_UPGRADE_NOW": "Update account information",
+	"LABEL_REGISTER_NOW": "Register",
 	"LABEL_LAST_NAME": "Last Name",
 	"LABEL_FIRST_NAME": "First Name",
 	"LABEL_MIDDLE_NAME": "Middle Name",

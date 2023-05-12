@@ -160,7 +160,7 @@ if (uni.restoreGlobal) {
   const hosts = "192.168.46.45,10.211.55.2,10.37.129.2".split(",");
   setTimeout(() => {
     uni.request({
-      url: `http://${"localhost"}:${9505}`,
+      url: `http://${"localhost"}:${9504}`,
       timeout: 1e3,
       success() {
         targetHost = "localhost";
@@ -170,7 +170,7 @@ if (uni.restoreGlobal) {
         if (!targetHost && hosts.length) {
           hosts.forEach((host) => {
             uni.request({
-              url: `http://${host}:${9505}`,
+              url: `http://${host}:${9504}`,
               timeout: 1e3,
               success() {
                 if (!targetHost) {
@@ -193,7 +193,7 @@ if (uni.restoreGlobal) {
     }, (hosts.length + 1) * 1100);
   }
   function initSocket() {
-    getTarget$1().__VUE_DEVTOOLS_SOCKET__ = new Socket(targetHost + ":" + 8103);
+    getTarget$1().__VUE_DEVTOOLS_SOCKET__ = new Socket(targetHost + ":" + 8102);
     socketReadyCallback();
   }
   var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
@@ -16077,7 +16077,8 @@ ${codeFrame}` : message);
     setDevToolsHook(target.__INTLIFY_DEVTOOLS_GLOBAL_HOOK__);
   }
   const PAGE_TITLE$1 = "实名升级";
-  const LABEL_UPGRADE_NOW$1 = "实名升级";
+  const LABEL_UPGRADE_NOW$1 = "更新账户信息";
+  const LABEL_REGISTER_NOW$1 = "注册";
   const LABEL_LAST_NAME$1 = "名";
   const LABEL_FIRST_NAME$1 = "姓";
   const LABEL_MIDDLE_NAME$1 = "中间名";
@@ -16111,6 +16112,7 @@ ${codeFrame}` : message);
   const zh = {
     PAGE_TITLE: PAGE_TITLE$1,
     LABEL_UPGRADE_NOW: LABEL_UPGRADE_NOW$1,
+    LABEL_REGISTER_NOW: LABEL_REGISTER_NOW$1,
     LABEL_LAST_NAME: LABEL_LAST_NAME$1,
     LABEL_FIRST_NAME: LABEL_FIRST_NAME$1,
     LABEL_MIDDLE_NAME: LABEL_MIDDLE_NAME$1,
@@ -16143,7 +16145,8 @@ ${codeFrame}` : message);
     CONTENT_HOMEPAGE: CONTENT_HOMEPAGE$1
   };
   const PAGE_TITLE = "Real Name Upgrade";
-  const LABEL_UPGRADE_NOW = "Real Name Upgrade";
+  const LABEL_UPGRADE_NOW = "Update account information";
+  const LABEL_REGISTER_NOW = "Register";
   const LABEL_LAST_NAME = "Last Name";
   const LABEL_FIRST_NAME = "First Name";
   const LABEL_MIDDLE_NAME = "Middle Name";
@@ -16176,6 +16179,7 @@ ${codeFrame}` : message);
   const en = {
     PAGE_TITLE,
     LABEL_UPGRADE_NOW,
+    LABEL_REGISTER_NOW,
     LABEL_LAST_NAME,
     LABEL_FIRST_NAME,
     LABEL_MIDDLE_NAME,

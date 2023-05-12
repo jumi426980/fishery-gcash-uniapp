@@ -20,6 +20,9 @@
 			</div>
 		</view>
 		<view class="row dark-background">
+			<div style="text-align: center; padding-bottom: 1em">
+				<uni-button type="primary" class="large-button" style="background-color:white; color:#297BFA;"  border-radius="50%" @click="enroll">{{$t("LABEL_REGISTER_NOW")}}</uni-button>
+			</div>
 			<div style="text-align: center;">
 				<uni-button type="primary" class="large-button" style="background-color:white; color:#297BFA;"  border-radius="50%" @click="enroll">{{$t("LABEL_UPGRADE_NOW")}}</uni-button>
 			</div>

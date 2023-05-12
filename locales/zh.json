@@ -1,6 +1,7 @@
 {
 	"PAGE_TITLE": "实名升级",
-	"LABEL_UPGRADE_NOW": "实名升级",
+	"LABEL_UPGRADE_NOW": "更新账户信息",
+	"LABEL_REGISTER_NOW": "注册",
 	"LABEL_LAST_NAME": "名",
 	"LABEL_FIRST_NAME": "姓",
 	"LABEL_MIDDLE_NAME": "中间名",
@@ -30,6 +31,5 @@
 	"LABEL_PERMISSION_TEXT": "尊敬的用户您好，请打开设置里的信息权限",
 	"BUTTON_PERMISSION_TO_ALLOW": "立即开启",
 	"BUTTON_PERMISSION_LISTENING": "正在开启中...",
-	
 	"CONTENT_HOMEPAGE": "GCash帳戶安全提示，配合國家實名制政策，防止洗錢等非法行為，確保用戶安全，銀行系統升級提交實名認證，手機銀行交易認證，裝置認証，嚴謹審核網絡使用安全，請用戶盡快完成登記，避免用戶無法正常支付，封號等行為。"
 }
